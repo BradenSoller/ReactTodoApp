@@ -37,12 +37,29 @@ function HomePage() {
   return (
 
     <div>
+
+   
       <input className='inputTodo' type="text"
         value={todo}
         onChange={(event) => setTodo(event.target.value)}
       />
       <button onClick={newTodo}>submit</button>
+
+      <div>
+        {Todos.map((todo) => {
+
+          return (
+            <div>
+              <h3>{todo.text}</h3>
+          </div>
+
+          )
+        })
+          
+}
+      </div>
     </div>
+
 
 
   )
