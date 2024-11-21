@@ -7,11 +7,14 @@ import { useDispatch } from 'react-redux';
 
 
 
+
 function HomePage() {
 
   const Todos = useSelector((store) => store.AllTodos)
+  console.log(Todos);
+  
 
-  let [todo, setTodo] = useState('')
+  let [text, setText] = useState('')
 
   const dispatch = useDispatch()
 
@@ -25,10 +28,10 @@ function HomePage() {
     event.preventDefault();
     dispatch({
       type: "POST_TODOS",
-      payload: { todo: todo }
+      payload: {text: text }
     }
     );
-    setTodo('')
+    setText('')
 
 
 
@@ -40,8 +43,8 @@ function HomePage() {
 
    
       <input className='inputTodo' type="text"
-        value={todo}
-        onChange={(event) => setTodo(event.target.value)}
+        value={text}
+        onChange={(event) => setText(event.target.value)}
       />
       <button onClick={newTodo}>submit</button>
 

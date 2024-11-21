@@ -8,7 +8,7 @@ import axios from "axios";
             url: "/api/todo",
           });
           yield put({
-            type: "SET_TODOS",
+            type: "SET_TODO",
             payload: response.data,
           });
         } catch (error) {
