@@ -12,7 +12,18 @@
            align-content: center;
            position: absolute;
            top: 20%;
-           left: 14%;
+           left: 23%;
        
 
+}
+
+.inputTodo {
+width: 200px;
+}
+
+#submitButton{
+      width: 100px;
+      position: absolute;
+      top: 1%;
+      right: 50%;
 }

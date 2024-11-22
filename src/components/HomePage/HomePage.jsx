@@ -46,7 +46,7 @@ function HomePage() {
         value={text}
         onChange={(event) => setText(event.target.value)}
       />
-      <button onClick={newTodo}>submit</button>
+      <button id="submitButton" onClick={newTodo}>submit</button>
 
       <div>
         {Todos.map((todo) => {
