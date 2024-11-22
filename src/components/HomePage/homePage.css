@@ -1,0 +1,18 @@
+#TodoCard{
+      width: 700px;
+            height: 500px;
+            background-color: var(--greenish);
+            font-family: var(--srcsansreg);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 4px 8px rgba(3, 3, 0, 0.4);
+            border-radius: 8px;
+            transition: 90ms ease-in-out;
+           align-content: center;
+           position: absolute;
+           top: 20%;
+           left: 14%;
+       
+
+}

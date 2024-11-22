@@ -4,7 +4,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
-
+import "./homePage.css"
 
 
 
@@ -39,7 +39,7 @@ function HomePage() {
 
   return (
 
-    <div>
+    <div id="TodoCard">
 
    
       <input className='inputTodo' type="text"
