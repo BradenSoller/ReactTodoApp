@@ -19,11 +19,16 @@
 
 .inputTodo {
 width: 200px;
+position: absolute;
+top:15%;
+left:25%
 }
+
 
 #submitButton{
       width: 100px;
       position: absolute;
-      top: 1%;
-      right: 50%;
+      top: 15.65%;
+      right: 52%;
+
 }
