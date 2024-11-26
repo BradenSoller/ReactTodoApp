@@ -39,7 +39,7 @@ function HomePage() {
 
   return (
 
-    <div id="TodoCard">
+   <div>
 
    
       <input className='inputTodo' type="text"
@@ -48,7 +48,7 @@ function HomePage() {
       />
       <button id="submitButton" onClick={newTodo}>submit</button>
 
-      <div>
+      <div id="TodoCard">
         {Todos.map((todo) => {
 
           return (
